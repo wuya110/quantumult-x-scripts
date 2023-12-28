@@ -1,0 +1,7 @@
+[Script]
+
+# > 网易云解锁VIP
+http-response^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header https://raw.githubusercontent.com/wuya110/quantumult-x-scripts/main/66.js
+
+[mitm] 
+hostname = *.music.163.com
