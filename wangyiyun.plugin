@@ -9,7 +9,7 @@ Tg频道:https://t.me/iosapp520
 VIP音乐试听权限+
 不会变身会员,可以直接听会员歌曲！无法调高音质！
 
-[Script]
+[Plugin]
 # > 网易云解锁VIP
 http-response^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js
 
