@@ -1,15 +1,14 @@
 /*
-脚本功能：网易云解锁VIP
-免责声明：仅供参考 请勿传播 脚本具有时效性
-脚本作者：ios-🐔神
-更新时间：2023.10.21
+#!name=Loon wangyiyun
+#!desc=Loon 网易云
+#!openUrl=https://🎈.com
+#!author=wuya
+#!homepage=https://github.com/Peng-YM/Loon-Gallery
+#!icon=https://avatars.githubusercontent.com/u/38467044?v=4
 
-Tg频道:https://t.me/iosapp520
 
-VIP音乐试听权限+
-不会变身会员,可以直接听会员歌曲！无法调高音质！
+[Script]
 
-[Plugin]
 # > 网易云解锁VIP
 http-response^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js
 
