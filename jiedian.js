@@ -11,7 +11,7 @@ var requests = urls.map(url => {
 });
 
 Promise.all(requests.map(request => $task.fetch(request)))
-    。then(responses => {
+    .then(responses => {
         var allNodes = [];
         for (var response of responses) {
             var data = response.body;
@@ -22,7 +22,7 @@ Promise.all(requests.map(request => $task.fetch(request)))
         $notify("获取节点成功", "", "获取到以下节点：\n" + nodesStr);
         $done();  // 结束Promise
     })
-    。catch(reason => {
+    .catch(reason => {
         $notify("获取节点失败", "", reason.error);
         $done();  // 结束Promise
     });
