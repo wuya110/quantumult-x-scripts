@@ -1,7 +1,7 @@
 // 获取QQ音乐签到cookie的脚本
 // 请在QuantumultX中添加以下内容到[rewrite_local]和[mitm]部分
  [rewrite_local]
- ^https:\/\/y\.qq\.com\/music\/common\/upload\/MUSIC_U\/.* url script-request-header https://raw.githubusercontent.com/wuya110/quantumult-x-scripts/main/qq_music_rewrite.js
+ ^https:\/\/y\.qq\.com\/music\/common\/upload\/MUSIC_U\/.* url script-request-header https://raw.githubusercontent。com/wuya110/quantumult-x-scripts/main/qq_music_rewrite.js
  [mitm]
  hostname = y.qq.com
 
@@ -12,7 +12,7 @@ const cookieVal = $request.headers['Cookie']
 
 if (cookieVal) {
   if (chavy.setdata(cookieVal, cookieKey)) {
-    chavy.msg(`${cookieName}`, '获取Cookie: 成功', '')
+    chavy.msg(`${cookieName}`， '获取Cookie: 成功', '')
     chavy.log(`[${cookieName}] 获取Cookie: 成功, cookie: ${cookieVal}`)
   }
 }
@@ -23,14 +23,14 @@ function init() {
   const isLoon = typeof $loon != 'undefined'
   const isJSBox = typeof $app != 'undefined' && $app.info.bundleID == 'app.cyan.jsbox'
   const isNode = typeof require == 'function' && !isJSBox
-  const notify = (title, subtitle, message) => {
+  const notify = (title， subtitle, message) => {
     if (isJSBox) $push.schedule({ title: title, body: subtitle ? subtitle + '\n' + message : message })
     else if (isSurge) $notification.post(title, subtitle, message)
     else if (isQuanX) $notify(title, subtitle, message)
     else if (isLoon) $notification.post(title, subtitle, message)
     else if (isNode) console.log(JSON.stringify({ title: title, subtitle: subtitle, message: message }))
   }
-  const setdata = (key, val) => {
+  const setdata = (key， val) => {
     if (isSurge) return $persistentStore.write(val, key)
     else if (isQuanX) return $prefs.setValueForKey(val, key)
     else if (isLoon) return $persistentStore.write(val, key)
