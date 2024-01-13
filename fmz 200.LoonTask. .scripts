@@ -10,15 +10,13 @@
 
 # fmz200
 
-cron "30 1,8,12,17 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuaishou/ks_fruit.js, timeout=300, tag=快手果园, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/task/kuaishou.png, enabled=false
-cron "30 1,7,12,18,22 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/pinduoduo/pdd_guoyuan.js, timeout=300, tag=拼多多果园, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png, enabled=false
-cron "10 0 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jddj_fruit.js, timeout=300, tag=京东到家果园任务, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=false
+tag=京东到家果园任务, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=false
 tag=京东到家鲜豆任务, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=false
 cron "10 0 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jddj_plantBeans.js, timeout=300, tag=京东到家鲜豆庄园, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=false
-cron "0 * */1 * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jddj_getPoints.js, timeout=300, tag=京东到家鲜豆庄园收水滴, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=false
+tag=京东到家鲜豆庄园收水滴, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=false
 
 # By NobyDa    GitHub：https://github.com/NobyDa/Script/tree/master
-cron "15 1 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, enable=false, tag=京东
+
 cron "20 1 8 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, enable=false, tag=爱奇艺
 
 # By chavyleung      GitHub：https://github.com/chavyleung/scripts
