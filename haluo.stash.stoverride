@@ -9,35 +9,20 @@ http:
   script:
 
     - match: ^https:\/\/api\.hellobike\.com\/api\?user\.taurus\.pointInfo
-      name: "获取哈罗单车Cookie"
-      type: request
-      require-body: true
-      script: hldc_cookie.js
-      max-size: 0
-
-    - match: ^https:\/\/api\.hellobike\.com\/api\?user\.taurus\.pointInfo
       name: "哈罗单车奖励金签到"
       type: request
       require-body: true
       script: hldc.js
-      max-size: 0
+      timeout: 10
 
 cron:
   script:
-
-    - name: "获取哈罗单车Cookie"
-      cron: "1 0 * * *"
-      timeout: 60
 
     - name: "哈罗单车奖励金签到"
       cron: "11 0 * * *"
       timeout: 60
 
 script-providers:
-  "获取哈罗单车Cookie":
-    url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/hldc_cookie.js
-    interval: 86400
-
   "哈罗单车奖励金签到":
     url: https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/hldc.js
     interval: 86400
