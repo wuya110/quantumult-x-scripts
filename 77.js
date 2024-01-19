@@ -2,7 +2,7 @@
 hostname = node.kg.qq.com
 [rewrite_local]
 # 获取全民K歌Cookie
-https:\/\/node\.kg\.qq\.com\/log\?format=json&outCharset=utf-8&g_tk url script-request-header https://raw.githubusercontent.com/wuya110/-001/main/6.js
+https:\/\/node\.kg\.qq\.com\/log\?format=json&outCharset=utf-8&g_tk url script-request-header https://raw.githubusercontent.com/wuya110/quantumult-x-scripts/main/77.js
 
 
 const cookieName = '全民K歌'
