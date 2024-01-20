@@ -5,7 +5,6 @@
 # 图标: https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QQKSong.png
 # 日期: 2024-01-20 12:53:01
 
-
 [rewrite_remote]
 ^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\/ url 302 /reject-dict
 ^https?:\/\/wallpaper-\d+\.file\.myqcloud\.com\/hikari\/ url 302 /reject-dict
