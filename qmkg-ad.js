@@ -3,12 +3,6 @@
 
 # 日期: 2024-01-20 12:53:01
 
-[filter_local]
-// 添加你的本地拦截规则（如果有的话）
-
-[filter_remote]
-// 添加你的远程拦截规则（如果有的话）
-
 [rewrite_remote]
 ^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\/ url 302 /reject-dict
 ^https?:\/\/wallpaper-\d+\.file\.myqcloud\.com\/hikari\/ url 302 /reject-dict
