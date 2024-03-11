@@ -1,0 +1,10 @@
+#!name=网易云云解锁VIP
+#!desc=vip听歌
+#!icon=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/wyyyy.png
+
+[Script]
+# > 网易云解锁VIP
+http-request ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ script-path=https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js, timeout=60, tag=网易云音乐vip
+
+[MITM]
+hostname = *.music.163.com
