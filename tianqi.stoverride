@@ -6,7 +6,7 @@ tiles:
   - name: tianqi
     icon: 'sun.max.fill'
     backgroundColor: '#ffc400'
-    argument: 'cityId=101170101'
+    argument: 'cityId=101280601'
 script-providers:
   tianqi:
     url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/tianqi.js
